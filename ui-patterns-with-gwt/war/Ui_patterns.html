@@ -1,0 +1,74 @@
+<!doctype html>
+<!-- The DOCTYPE declaration above will set the    -->
+<!-- browser's rendering engine into               -->
+<!-- "Standards Mode". Replacing this declaration  -->
+<!-- with a "Quirks Mode" doctype may lead to some -->
+<!-- differences in layout.                        -->
+
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+    <!--                                                               -->
+    <!-- Consider inlining CSS to reduce the number of requested files -->
+    <!--                                                               -->
+    <link type="text/css" rel="stylesheet" href="Ui_patterns.css">
+
+    <!--                                           -->
+    <!-- Any title is fine                         -->
+    <!--                                           -->
+    <title>Project quality calculator</title>
+    
+    <!--                                           -->
+    <!-- This script loads your compiled module.   -->
+    <!-- If you add any GWT meta tags, they must   -->
+    <!-- be added before this line.                -->
+    <!--                                           -->
+    <script type="text/javascript" language="javascript" src="ui_patterns/ui_patterns.nocache.js"></script>
+  </head>
+
+  <!--                                           -->
+  <!-- The body can have arbitrary html, or      -->
+  <!-- you can leave the body empty if you want  -->
+  <!-- to create a completely dynamic UI.        -->
+  <!--                                           -->
+  <body>
+
+    <!-- OPTIONAL: include this if you want history support -->
+    <iframe src="javascript:''" id="__gwt_historyFrame" tabIndex='-1' style="position:absolute;width:0;height:0;border:0"></iframe>
+    
+    <!-- RECOMMENDED if your web app will not function without JavaScript enabled -->
+    <noscript>
+      <div style="width: 22em; position: absolute; left: 50%; margin-left: -11em; color: red; background-color: white; border: 1px solid red; padding: 4px; font-family: sans-serif">
+        Your web browser must have JavaScript enabled
+        in order for this application to display correctly.
+      </div>
+    </noscript>
+
+    <h1>Project quality calculator</h1>
+    This is simple application to demonstrate how different UI patterns can be implemented using GWT.
+    <h2>Used patterns are: </h2>
+    <ul>
+      <li>MVC - in ee.urgoringo.sandbox.gwtpatterns.client.mvc package</li> 
+      <li>Command - in ee.urgoringo.sandbox.gwtpatterns.client.command package</li>
+      <li><a href="http://martinfowler.com/eaaDev/SupervisingPresenter.html">MVP (with Supervising Presenter)</a> - in ee.urgoringo.sandbox.gwtpatterns.client.mvp package</li>
+      <li><a href="http://martinfowler.com/eaaDev/PassiveScreen.html">MVP with Passive View</a> - in ee.urgoringo.sandbox.gwtpatterns.client.mvp_passive_view package</li>
+      <li><a href="http://martinfowler.com/eaaDev/PresentationModel.html">Presentation Model</a> - in ee.urgoringo.sandbox.gwtpatterns.client.presentationmodel package</li> 
+    </ul> 
+    To switch the implementation simply replace the view class in Ui_patterns_gwt.
+    <h2>Functionality</h2>
+    <ul>
+      <li>
+        User can enter project time constraints in man-days and no of user stories that need to be implemented.      
+      </li>
+      <li>
+       Based on these values application will apply "extremely complex scientific calculation" :) to figure out how many
+       bugs you are likely going to have. Using the the number of bugs system will calculate your quality level.       
+      </li>
+      <li>
+       Quality level is indicated using different font colors when displaying bug count (red, blue, black).      
+      </li>
+    </ul>
+    <h2>The calculator</h2>
+  </body>
+</html>
